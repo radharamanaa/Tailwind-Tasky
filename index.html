@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind try</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <style>
+    header.header.header-container {
+      width: 100%;
+      width: 0 auto !important;
+    }
+
+    .task-item {
+      /* max-height: 250px; */
+    }
+    .date{
+      align-items: flex-end;
+    }
+    .time-icon>svg {
+      width: 1rem;
+      margin-right: .25rem;
+      padding-left: .25rem;
+    }
+    .task-desc{
+      height:150px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body style="font-family: 'Inter', sans-serif">
+  <div class="flex-col items-center h-screen" style="margin: 0 auto;">
+    <div class="header-container justify-center bg-violet-600 flex flex-wrap" style="margin: 0 auto">
+      <header class="flex flex-wrap items-center w-2/3 bg-violet-600 text-slate-50">
+        <ul class="flex flex-1 flex-wrap list-none px-4 p-4">
+          <li class="text-4xl cursor-pointer">Tasky</li>
+        </ul>
+        <div class="right">
+          <ul class="flex flex-wrap">
+            <li class="p-2 px-4 cursor-pointer">About</li>
+            <li class="p-2 px-4 cursor-pointer">Home</li>
+            <li class="p-2 px-4 cursor-pointer">Careers</li>
+            <li class="p-2 px-4 cursor-pointer">Projects</li>
+          </ul>
+        </div>
+        </ul>
+      </header>
+    </div>
+    <section class="tasks flex flex-wrap min-h-full justify-center content-start rounded-xl bg-gray-100">
+      <div class="flex flex-wrap task-items w-2/3 justify-center gap-4 bg-gray-100 m-4 p-2">
+        
+        <div class="task-item shadow-lg flex flex-wrap flex-col text-slate-700 w-1/3 border-2 
+        bg-slate-50 
+        border-violet-700 rounded-lg p-4" style="width: 250px;">
+          <div class="category flex text-white bg-violet-700 text-xs font-thin rounded-full p-1 mx-4 self-start">
+            Shopping
+          </div>
+          <div class="task-name text-md px-4 w-52 underline decoration-dotted decoration-blue-500 font-bold">
+              Prepare for exams</div>
+          <div class="task-desc px-4 py-2 text-xs text-gray-700 overflow-clip h-14 ">Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Cupiditate quisquam eaque similique, odio esse magnam doloremque veniam
+            labore
+            animi perferendis ratione maiores repellendus velit tempora voluptatibus totam est! Eaque, laudantium.
+            Adipisci animi accusantium a quo fugit sunt, facilis qui atque!.</div>
+          <div class="date-and-heart flex justify-start items-baseline">
+
+            <div class="date flex items-baseline py-1 m-4 font-semibold text-xs bg-slate-200 rounded-full text-gray-800 ">
+              <div class="time-icon flex items-baseline align-baseline self-end">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="hearts flex self-center justify-self-start stroke-red-700  fill-red-700 text-red-700">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="task-item shadow-lg flex flex-wrap flex-col text-slate-700 w-1/3 border-2 
+        bg-slate-50 
+        border-violet-700 rounded-lg p-4" style="width: 250px;">
+          <div class="category flex text-white bg-violet-700 text-xs font-thin rounded-full p-1 mx-4 self-start">
+            Shopping
+          </div>
+          <div class="task-name text-md px-4 w-52 underline decoration-dotted decoration-blue-500 font-bold">
+              Get Groceries</div>
+          <div class="task-desc px-4 py-2 text-xs text-gray-700 overflow-clip h-14 ">Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Cupiditate quisquam eaque similique, odio esse magnam doloremque veniam
+            labore
+            animi perferendis ratione maiores repellendus velit tempora voluptatibus totam est! Eaque, laudantium.
+            Adipisci animi accusantium a quo fugit sunt, facilis qui atque!.</div>
+          <div class="date-and-heart flex justify-start items-baseline">
+
+            <div class="date flex items-baseline py-1 m-4 font-semibold text-xs bg-slate-200 rounded-full text-gray-800 ">
+              <div class="time-icon flex items-baseline align-baseline self-end">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="hearts flex self-center justify-self-start stroke-red-700  fill-red-700 text-red-700">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="task-item shadow-lg flex flex-wrap flex-col text-slate-700 w-1/3 border-2 
+        bg-slate-50 
+        border-violet-700 rounded-lg p-4" style="width: 250px;">
+          <div class="category flex text-white bg-violet-700 text-xs font-thin rounded-full p-1 mx-4 self-start">
+            Shopping
+          </div>
+          <div class="task-name text-md px-4 w-52 underline decoration-dotted decoration-blue-500 font-bold">
+              Buy an Iphone</div>
+          <div class="task-desc px-4 py-2 text-xs text-gray-700 overflow-clip h-14 ">Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Cupiditate quisquam eaque similique, odio esse magnam doloremque veniam
+            labore
+            animi perferendis ratione maiores repellendus velit tempora voluptatibus totam est! Eaque, laudantium.
+            Adipisci animi accusantium a quo fugit sunt, facilis qui atque!.</div>
+          <div class="date-and-heart flex justify-start items-baseline">
+
+            <div class="date flex items-baseline py-1 m-4 font-semibold text-xs bg-slate-200 rounded-full text-gray-800 ">
+              <div class="time-icon flex items-baseline align-baseline self-end">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="hearts flex self-center justify-self-start stroke-red-700  fill-red-700 text-red-700">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <footer class="flex justify-center items-center p-4 bg-black text-slate-100 -translate-y-1/4">
+      <div class="flex p-2 justify-around footer-content w-2/3">
+        <div class="footer-item flex p-2">About</div>
+        <div class="footer-item flex p-2">Home</div>
+        <div class="footer-item flex p-2">Careers</div>
+        <div class="footer-item flex p-2">Projects</div>
+
+      </div>
+    </footer>
+  </div>
+</body>
+<script>
+  Array.from(document.getElementsByClassName("date")).forEach(item => item.innerHTML += "<div class='date-string pr-4 self-center'>" + new Date().toDateString()) + "</div>";
+
+</script>
+
+</html>
